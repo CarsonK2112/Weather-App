@@ -4,10 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-    <input type="search" name="input-city" id="input-city">
-    <button id="button-thing">click me and check console log</button>
+    <div class="container-fluid text-center bg-dark text-white">
+        <h1 class="pt-3 pb-3">
+            Weather Dashboard
+        </h1>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <h3>
+                        Search for a City:
+                    </h3>
+                    <input type="search" name="input-city" id="input-city">
+                    <button id="button-thing">Search</button>
+                    <!-- past search buttons go here -->
+                    <ul class="past-searches">
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row content-current-forecast">
+                    current forecast
+                </div>
+                <div class="row content-future-forecast">
+                
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 
     <div id="forecast-container">
         <div class="card">
